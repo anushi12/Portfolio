@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/b8e543530b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img class="img-logo" src="images/logo1.png" alt="">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#Certifications">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <div class="row">
+        <div class="about-col">
+          <div class="header-text">
+            <p>Hello,</p>
+            <h1>I'm <span>Anushikha Das</span></h1>
+            <br/>
+            <p>Web Developer</p>
+          </div>
+        </div>
+        <div class="about-col2">
+          <img src="images/self.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- -------------about------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/about.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1><br/>
+          <p>I am a 4th-year Computer Science student at Chandigarh University, with a passion for web development and a strong foundation in both frontend and backend technologies. Over the course of my studies, I’ve developed hands-on experience through various projects, including real-time chat applications, e-commerce platforms, and booking systems. Skilled in HTML, CSS, JavaScript, and the MERN stack, I am committed to creating responsive, user-friendly web applications. My journey in computer science has deepened my interest in problem-solving and honed my ability to learn quickly, adapt, and collaborate effectively in team environments.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Development</span><br>Designing responsive websites</li>
+              <li><span>Data Structure and Algorithm</span><br>Solving problems</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2021 - current</span><br>CSE from Chandigarh University</li>
+              <li><span>2019 - 2021</span><br>Higher Secondary (PCMB)</li>
+              <li><span>2018 - 2019</span><br>High School</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- --------------services--------------- -->
+
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+       <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Development</h2>
+        <p>As a web developer specializing in the MERN stack (MongoDB, Express.js, React, and Node.js), I am passionate about building dynamic, high-performance applications that deliver a seamless user experience. My expertise spans across frontend and backend development, where I utilize React to design responsive, intuitive interfaces and Express with Node.js to handle complex server-side operations.</p>
+        <a href="#">Learn More</a>
+       </div>
+       <div>
+        <i class="fa-solid fa-crop"></i>
+        <h2>UI/UX designer</h2>
+        <p>I am dedicated to crafting engaging and intuitive digital experiences. My approach to design is user-centered, focusing on creating interfaces that are not only visually appealing but also highly functional and easy to navigate </p>
+        <a href="#">Learn More</a>
+       </div>
+       <div>
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h2>Blogging</h2>
+        <p>I have a passion for writing blogs that inform, engage, and inspire readers. With a focus on topics related to technology, web development, and UI/UX design, I enjoy sharing insights, tips, and personal experiences with a broad audience. My writing style is clear, concise, and aimed at making complex concepts accessible to both beginners and professionals</p>
+        <a href="#">Learn More</a>
+       </div>
+    </div>
+  </div>
+</div>
+
+<!-- ----------------project---------------- -->
+
+<div id="project">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+
+    <div class="work-list">
+      <div class="work">
+        <img src="images/fashion.jpeg" alt="">
+        <div class="layer">
+          <h3>Fashionista</h3>
+          <p>Designed to cater to diverse style preferences, Fashionista offers a seamless navigation experience with organized categories, high-quality images, and efficient search options. The project highlights the integration of dynamic data handling and real-time updates, giving users a smooth and engaging shopping experience.</p>
+          <a href="https://github.com/anushi12/Fashionista-project"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/restro.jpeg" alt="">
+        <div class="layer">
+          <h3>Restaurant Booking System</h3>
+          <p>Built using HTML, CSS, JavaScript, and PHP, this system enables users to search for nearby restaurants based on their current location, view available seats, and make reservations in advance. With a user-friendly interface, it saves time and enhances convenience by helping diners avoid long wait times, especially during peak hours.</p>
+          <a href="https://github.com/anushi12/Restaurant-Booking-Project"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/track.jpeg" alt="">
+        <div class="layer">
+          <h3>Expense Tracker</h3>
+          <p> Built with a focus on simplicity and user-friendliness, this application allows users to log, categorize, and monitor their daily expenses, making budgeting easier and more manageable. With features like expense categorization, spending limits, and visual charts, users can get a clear overview of their spending habits and identify areas where they can save. </p>
+          <a href="https://github.com/anushi12/BACKEND-PROJECT"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- -----------------------------certificates------------------- -->
+
+<div id="Certifications">
+  <div class="container">
+    <h1 class="sub-title">Certifications</h1>
+
+    <div class="work-list">
+      <div class="work">
+        <img src="images/aws.png" alt="">
+        <div class="layer">
+          <h3>AWS Cloud Specialization</h3>
+          <p>COURSERA</p>
+          <a href="https://www.coursera.org/account/accomplishments/professional-cert/99SF8QJK9SL3"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/SQL (1).png" alt="">
+        <div class="layer">
+          <h3>Azure SQL</h3>
+          <p>COURSERA</p>
+          <a href="https://drive.google.com/file/d/1e3ZGTIfYyXlog9puxTPzlgx9_xBvSkDL/view"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/ml.png" alt="">
+        <div class="layer">
+          <h3>Supervised ML - Regression</h3>
+          <p>COURSERA</p>
+          <a href="https://www.coursera.org/account/accomplishments/verify/G8K8CG4IKWWC"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/NPTEL.png" alt="">
+        <div class="layer">
+          <h3>Internet of Things</h3>
+          <p>NPTEL </p>
+          <a href="https://archive.nptel.ac.in/content/noc/NOC23/SEM2/Ecertificates/106/noc23-cs83/Course/NPTEL23CS83S83330178520029446.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ------------------contact------------ -->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-sharp fa-solid fa-envelope"></i> anushikhadas260@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 6909727563</p>
+        <div class="social-icons">
+          <a href="https://github.com/anushi12"><i class="fa-brands fa-github"></i></a>
+          <a href="https://x.com/Anushikhadas3"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/anushikha-das-b11b0a230/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://hashnode.com/@Anushikha03"><i class="fa-brands fa-hashnode"></i></a>
+        </div>
+        <a href="images/Anushikha Das RESUME .pdf" download class="btn btn2">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your name" required>
+          <input type="email" name="Email" placeholder="Your email address" required>
+          <textarea name="Message" rows="6" placeholder="Type message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © [2023] Anushikha Das. All rights reserved.</p>
+  </div>
+</div>
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function closemenu(){
+      sidemenu.style.right = "-200px"
+    }
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+  </script>
+  <script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbzEcfIrTj68yVVna4uceZ-3sUV2TCtT3RqX2tctKe8uBaONvrPM5Qe2qQrPSLoDBeLqKg/exec>'
+    const form = document.forms['submit-to-google-sheet']
+  
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
